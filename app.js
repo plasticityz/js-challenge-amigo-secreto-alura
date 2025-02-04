@@ -25,3 +25,13 @@ function atualizarListaAmigos() {
     }
 }
 
+function sortearAmigo() {
+    if(amigos.length == 0){
+        alert("Sorteio indisponivel, adicione participantes")
+    } else {
+        let numeroSorteado = parseInt(Math.floor(Math.random()*amigos.length))
+        let ganhador = amigos[numeroSorteado];
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML = `O vencedor do sorteio foi: ${ganhador}`;
+        }
+}
