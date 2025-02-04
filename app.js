@@ -9,7 +9,7 @@ function adicionarAmigo() {
     } else {
         amigos.push(nomeEntrada.value);
         console.log(amigos);
-        nomeEntrada = "";
+        nomeEntrada.value = "";
         return atualizarListaAmigos();
     }
 }
@@ -24,3 +24,4 @@ function atualizarListaAmigos() {
         console.log(lista);
     }
 }
+
